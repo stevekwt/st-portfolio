@@ -23,7 +23,6 @@ skwtApp.scrollToSections = () => {
         }, 200);
     });
     $($aboutLink).on('click', function (e) {
-        e.preventDefault();
         console.log(`about clicked`);
         $('html, body').animate({
             scrollTop: $($aboutSection).offset().top
@@ -47,7 +46,7 @@ skwtApp.scrollToSections = () => {
 
     $($backToTopLink).on('click', function (e) {
         $('html, body').animate({
-            scrollTop: $($aboutSection).offset().top
+            scrollTop: $($introSection).offset().top
         }, 200);
     });
     
