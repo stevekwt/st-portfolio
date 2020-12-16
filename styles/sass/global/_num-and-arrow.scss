@@ -1,0 +1,35 @@
+.num-and-arrow {
+    margin: 0;
+    display: flex;
+    // border: 1px solid #000;
+}
+.number-holder {
+    width: calc(50% - 7.6px);
+    display: flex;
+    // border: 1px solid red;
+}
+.page-number {
+    font-size: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: black;
+    line-height: 5.9rem;
+}
+.section-name {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    transform: translate(-40px, 19px);
+    width: 50px;
+    display: none;
+}
+.down-arrow, .backtop {
+    font-size: 3rem;
+    a {
+        text-decoration: none;
+    }
+}
+.down-arrow a:hover,
+.backtop a:hover {
+    color: $yellow;
+}

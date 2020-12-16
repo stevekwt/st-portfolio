@@ -1,0 +1,77 @@
+.contact-me {
+    background-color: $background;
+}
+
+.contact-contents {
+    height: calc(100vh - 50px);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-box {
+    // border: 1px solid #000;
+    padding: 20px 0;
+    width: 770px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 370px 370px;
+    gap: 0px 30px;
+}
+
+
+form {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    input {
+        background-color: $background;
+        border: none;
+        width: 100%;
+        border-bottom: 1px solid $darkgray;
+        margin: 0 0 20px 0;
+    }
+    input.name-input {
+        border-bottom: 1px solid $blue;
+    }
+    label.name-input {
+        padding-left: 7px;
+    }
+    .email-input {
+        color: $darkgray;
+    }
+    label.email-input {
+        padding-left: 7px;
+    }
+    textarea {
+        background-color: $background;
+        width: 100%;
+        height: 200px;
+        border: none;
+        border-left: 1px solid $darkgray;
+        border-bottom: 1px solid $darkgray;
+        resize: none;
+        padding: 7px;
+    }
+    button {
+        background-color: $background;
+        border: none;
+        cursor: pointer;
+        margin: 20px 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+.backtop {
+    margin: 10px 0;
+    align-self: flex-end;
+}
+.number-holder:last-of-type {
+    width: calc(50% - 74px);
+    display: flex;
+    // border: 1px solid red;
+}

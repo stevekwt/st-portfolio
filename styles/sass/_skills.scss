@@ -1,0 +1,30 @@
+.skills {
+    padding: 0;
+    background-color: $background;
+}
+
+.skills-contents {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-box {   
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    article {
+        padding: 40px;
+        border: 1px solid #000;
+    }
+}
+
+article {
+    text-align: center;
+}

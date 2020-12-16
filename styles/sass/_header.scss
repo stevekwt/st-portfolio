@@ -1,0 +1,109 @@
+
+header {
+    background-color: $background;
+    // padding: 0;
+    // margin: 0;
+}
+.header-contents {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.language-select {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 150px;
+    // display: flex;
+    // justify-content: space-between;
+    // border: 1px solid #000;
+    text-align: center;
+    .lang {
+        background-color: $yellow;
+        color: black;
+        padding: 10px;
+    }
+    .lang-line {
+        width: 30px;
+        height: 3px;
+        border-top: 2px solid black;
+        display: inline-block;
+        animation: 
+            spinLine 200ms linear 1.5s 1 forwards, 
+            fallDown 1.5s cubic-bezier(0.760, 0.150, 0.940, 0.680) 1.7s 1 forwards,
+            shrink 1ms linear 3.2s 1 forwards;
+    }
+}
+
+@keyframes spinLine {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(450deg);
+  }
+}
+@keyframes fallDown {
+  0% {
+    transform: translateY(0) rotateZ(90deg);
+  }
+  100% {
+    transform: translateY(92vh) rotateZ(90deg);
+  }
+}
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.header-contents .down-arrow {
+    animation: 
+        bounceFirst 1.5s ease-in-out 3.2s 1,
+        bounce 2.5s ease-in-out 4.7s infinite;
+}
+@keyframes bounceFirst {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.h1-wrapper {
+    width: 770px;
+    margin: 0 auto;
+}
+h1 {
+    white-space: pre;
+    margin: 20px;
+    // width: 585px;
+    // border: 1px solid #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 5.5rem;
+    color: $blue;
+}
