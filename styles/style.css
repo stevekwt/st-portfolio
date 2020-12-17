@@ -716,7 +716,10 @@ h1 {
 
 .skills-box article {
   padding: 40px;
-  border: 1px solid #000;
+}
+
+.skills-box article img {
+  width: 100%;
 }
 
 article {
