@@ -1,6 +1,28 @@
 .projects {
     background-color: $background;
 }
+.projects-box {
+    width: 770px;
+    margin: 0 auto;
+}
+
+
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid #000;
+    img {
+        width: 100%;
+    }
+    .projects-left, .projects-right {
+        width: 370px;
+        padding: 30px 0;
+        // border: 1px solid #000;
+    }
+}
+
 
 .made-with {
     ul li {

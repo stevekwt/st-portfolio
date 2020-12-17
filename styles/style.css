@@ -727,6 +727,32 @@ article {
   background-color: #ebebeb;
 }
 
+.projects-box {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project .projects-left, .project .projects-right {
+  width: 370px;
+  padding: 30px 0;
+}
+
 .made-with ul li {
   list-style: none;
 }
