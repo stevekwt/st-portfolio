@@ -14,7 +14,6 @@ skwtApp.scrollToSections = () => {
 
     $backToTopLink = $('p.backtop a')
 
-
     $($introLink).on('click', function (e) {
         $('html, body').animate({
             scrollTop: $($introSection).offset().top
@@ -49,16 +48,25 @@ skwtApp.scrollToSections = () => {
     
 }
 
+// after mobile nav is clicked, it automatically hides
+skwtApp.pushMobileNavBackIn = () => {
+    $('#menuToggle a').on('click', function () {
+        $('#menuToggle input').prop('checked', false); 
+    });
+}
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
 
     skwtApp.scrollToSections();
 
+    skwtApp.pushMobileNavBackIn();
+
     let mainNavLinks = document.querySelectorAll("nav ul li a");
     let mainSections = document.querySelectorAll("main section");
     
-    // ADVICE FROM CODEPEN, for future update:
+    // ADVICE FROM CODEPEN, for future update (credit in index.html):
     // This should probably be throttled.
     // Especially because it triggers during smooth scrolling.
     // https://lodash.com/docs/4.17.10#throttle
