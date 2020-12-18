@@ -1,9 +1,11 @@
 .side-nav {
     position: fixed;
     z-index: 10;
-    left: 50%;
     top: 40vh;
+    left: 50%;
     transform: translateX(46%);
+    // right: -875px;
+    // transform: translateX(-10%);
     border-top: 1.5px solid $blue;
     width: 1000px;
     height: 1px;
@@ -58,11 +60,12 @@ nav ul li a.current {
   }
 }
 
-// nav ul li a.current::after{
-//     content: '';
-//     width: 100px;
-//     display: inline-block;
-//     border-top: .3rem solid $yellow;
-//     margin: 0 1rem;
-//     transform: translateY(-1rem);
-// }
+@media (max-width: 1170px) {
+  .side-nav {
+    left: 89.5%;
+    transform: translateX(0%);
+    width: 125px;
+    overflow: hidden;
+    // right: 0;
+  }
+}
