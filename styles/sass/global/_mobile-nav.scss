@@ -12,7 +12,7 @@
 #menuToggle
 {
     display: block;
-    // position: absolute;
+    position: absolute;
     position: fixed;
     top: 50px;
     right: 50px;
@@ -93,7 +93,9 @@
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
   text-align: right;
 }
 

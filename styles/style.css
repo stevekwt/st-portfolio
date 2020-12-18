@@ -425,6 +425,7 @@ nav ul li a.current {
 
 #menuToggle {
   display: block;
+  position: absolute;
   position: fixed;
   top: 50px;
   right: 50px;
@@ -506,7 +507,9 @@ nav ul li a.current {
 
 #menu li {
   padding: 10px 0;
-  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
   text-align: right;
 }
 
@@ -811,13 +814,11 @@ h1 {
 }
 
 .socials {
-  width: 150px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 4rem;
 }
 
 .socials a {
