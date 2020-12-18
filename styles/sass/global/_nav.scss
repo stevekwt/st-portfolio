@@ -1,9 +1,33 @@
 .side-nav {
-    position: fixed;
-    z-index: 10;
     top: 40vh;
     left: 50%;
     transform: translateX(46%);
+    ul {
+      line-height: 120%;
+    }
+}
+.side-nav-mobile {
+    display: none;
+    top: 5vh;
+    right: 0;
+    ul {
+      line-height: 120%;
+      li::before {
+            content: '—'
+        }
+    }
+}
+.circle {
+    background: $blue;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.side-nav, 
+.side-nav-mobile {
+    z-index: 10;
+    position: fixed;
     // right: -875px;
     // transform: translateX(-10%);
     border-top: 1.5px solid $blue;
@@ -14,7 +38,6 @@
     rolldown 1.1s linear 600ms 1 forwards;
     ul {
         font-size: 2.5rem;
-        line-height: 120%;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -32,9 +55,6 @@
                 color: black;
             }
         }
-        // li::before {
-        //     content: '—'
-        // }
     }
 }
 
@@ -65,7 +85,15 @@ nav ul li a.current {
     left: 89.5%;
     transform: translateX(0%);
     width: 125px;
-    overflow: hidden;
-    // right: 0;
   }
+}
+
+@media (max-width: 776px) {
+  .side-nav {
+      display:none;
+  }
+  // .side-nav-mobile {
+  //   display: initial;
+  //   width: 33px;
+  // }
 }

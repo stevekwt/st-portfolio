@@ -52,7 +52,7 @@ header {
     transform: translateY(0) rotateZ(90deg);
   }
   100% {
-    transform: translateY(92vh) rotateZ(90deg);
+    transform: translateY(90vh) rotateZ(90deg);
   }
 }
 @keyframes shrink {
@@ -99,11 +99,9 @@ header {
 }
 h1 {
     white-space: pre;
-    margin: 20px;
-    // width: 585px;
-    // border: 1px solid #000;
+    margin: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 5.5rem;
+    font-size: clamp(4rem, 5.5vw, 5.5rem);
     color: $blue;
 }

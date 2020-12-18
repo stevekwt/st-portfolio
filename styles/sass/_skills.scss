@@ -4,8 +4,6 @@
 }
 
 .skills-contents {
-    min-height: 100vh;
-    // min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,10 +40,26 @@ article {
 
 @media (max-width: 850px) {
     .skills-box {   
-        max-width: 400px;
-        width: 58vw;
+        margin: 1vw auto;
+        padding: 1vw 0;
+        max-width: 447px;
+        width: 90vw;
         min-width: 290px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .skills-box {   
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills-box article {
+        padding: 20px 9px 0;
+        width: 81%;
     }
 }

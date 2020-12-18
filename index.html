@@ -22,6 +22,50 @@
                 
                 <div class="header-contents inner-wrapper">
 
+                    <nav class="mobile-menu">
+                        <div id="menuToggle">
+                            <!--
+                                A hidden checkbox for click reciever
+                                -->
+                            <input type="checkbox" />
+                            
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                            <!--
+                                Too bad the menu has to be inside of the button
+                                but hey, it's pure CSS magic.
+                                -->
+                            <ul id="menu">
+                                <a href="#intro" class="current">
+                                    <li>Intro</li>
+                                </a>
+                                <a href="#aboutme">
+                                    <li>About me</li>
+                                </a>
+                                <a href="#skills">
+                                    <li>Skills</li>
+                                </a>
+                                <a href="#projects">
+                                    <li>Projects</li>
+                                </a>
+                                <a href="#contact">
+                                    <li>Contact</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- <nav class="side-nav-mobile">
+                        <ul>
+                            <li><a href="#intro" class="current"><div class="circle"></div></a></li>
+                            <li><a href="#aboutme"><div class="circle"></a></li>
+                            <li><a href="#skills"><div class="circle"></a></li>
+                            <li><a href="#projects"><div class="circle"></a></li>
+                            <li><a href="#contact"><div class="circle"></a></li>
+                        </ul>
+                    </nav> -->
 
                     <nav class="side-nav">
                         <ul>
@@ -52,7 +96,6 @@ Web Developer.</h1>
     
                         <div class="number-holder 01">
                             <span class="page-number">01</span>
-                            <div class="section-name">Intro</div>
                         </div>
         
                         <div class="down-arrow"><a href="#aboutme">↓</a></div>
@@ -70,10 +113,9 @@ Web Developer.</h1>
 
         <div class="about-me-contents inner-wrapper">
 
-
-                <div class="about-me-tag-2 tag">
-                    <p class="tag">About me</p>
-                </div>
+            <div class="about-me-tag-2 tag">
+                <p class="tag">About me</p>
+            </div>
 
 
             <div class="about-me-box contents-box">
@@ -112,9 +154,9 @@ Web Developer.</h1>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde earum cumque veniam voluptate quos, libero, architecto, tenetur excepturi est mollitia corrupti. Nulla aut vero laudantium excepturi culpa corporis voluptates.</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error, dignissimos possimus sunt exercitationem sit neque ut eum beatae iure?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiss possimus sunt exercitationem sit neque ut eum beatae iure?</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam natus, libero optio voluptas, tempora ipsam recusandae reprehenderit molestiae nihil officiis numquam porro eius a atque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam naandae reprehenderit molestiae nihil officiis numquam porro eius a atque.</p>
             
                 </div>
             
@@ -124,7 +166,6 @@ Web Developer.</h1>
 
                 <div class="number-holder 02">
                     <span class="page-number">02</span>
-                    <div class="section-name">About me</div>
                 </div>
 
                 <div class="down-arrow"><a href="#skills">↓</a></div>
@@ -200,7 +241,6 @@ Web Developer.</h1>
             
                 <div class="number-holder 03">
                     <span class="page-number">03</span>
-                    <div class="section-name">Skills</div>
                 </div>
             
                 <div class="down-arrow"><a href="#projects">↓</a></div>
@@ -433,7 +473,6 @@ Web Developer.</h1>
         
                 <div class="number-holder 04">
                     <span class="page-number">04</span>
-                    <div class="section-name">Projects</div>
                 </div>
         
                 <div class="down-arrow"><a href="#contact">↓</a></div>
@@ -481,7 +520,6 @@ Web Developer.</h1>
             <div class="num-and-arrow">
                 <div class="number-holder 05">
                     <span class="page-number">05</span>
-                    <div class="section-name">Contact</div>
                 </div>
 
                 <p class="backtop"><a href="#intro">Back to top</a></p>
@@ -508,3 +546,4 @@ Web Developer.</h1>
 </html>
 
 <!-- Thanks to Chris Coyier's Sticky Smooth Active Nav https://css-tricks.com/sticky-smooth-active-nav/ -->
+<!-- Thanks to Erik Terwan's Pure CSS mobile menu: https://codepen.io/erikterwan/embed/EVzeRP -->

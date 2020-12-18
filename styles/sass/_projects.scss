@@ -50,6 +50,10 @@
                 color: $darkgray;
             }
         }
+        li:first-of-type {
+            padding-left: 0;
+            margin-left: -5px;
+        }
     }
 }
 
@@ -66,6 +70,10 @@
     }
     .project .project-image, 
     .project .project-article {
-        width: calc(70%);
+        max-width: 475px;
+        width: 94%;
+    }
+    .projects-box {
+        width: 80vw;
     }
 }

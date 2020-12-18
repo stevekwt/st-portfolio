@@ -1,5 +1,6 @@
 .num-and-arrow {
-    margin: 0;
+    margin: 25px 0 0;
+    // margin: 0;
     display: flex;
     // border: 1px solid #000;
 }
@@ -13,16 +14,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: black;
-    // line-height: 5.9rem;
-    line-height: 8rem;
-}
-.section-name {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    transform: translate(-40px, 19px);
-    width: 50px;
-    display: none;
+    line-height: 6rem;
+    // line-height: 8rem;
 }
 .down-arrow, .backtop {
     font-size: 3rem;

@@ -71,16 +71,19 @@ form {
 .backtop {
     margin: 10px 0;
     align-self: flex-end;
+    font-size: clamp(1.5rem, 5.5vw, 3rem);
 }
 .number-holder:last-of-type {
     width: calc(50% - 74px);
     display: flex;
-    // border: 1px solid red;
 }
 
 @media (max-width: 800px) {
     .contact-box {
         width: 60vw;
         grid-template-columns: 1fr;
+    }
+    .number-holder:last-of-type {
+        width: calc(50% - 54px);
     }
 }
