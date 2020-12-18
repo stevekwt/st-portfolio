@@ -420,7 +420,7 @@ nav ul li a.current {
 .mobile-menu {
   margin: 0;
   padding: 0;
-  display: hidden;
+  display: none;
 }
 
 #menuToggle {
