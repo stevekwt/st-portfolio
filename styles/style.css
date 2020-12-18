@@ -1031,6 +1031,12 @@ article {
     max-width: 475px;
     width: 94%;
   }
+  .project .project-image {
+    padding-bottom: 0;
+  }
+  .project .project-article {
+    padding-top: 0;
+  }
   .projects-box {
     width: 80vw;
   }
