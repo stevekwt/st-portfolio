@@ -61,19 +61,4 @@ a:visited {
     color: black;
 }
 
-.contents-box {
-    width: 570px;
-    // border: 1px solid #000;
-    margin: 0 auto;
-    // height: 300px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 270px 270px;
-    // grid-template-rows: 1fr;
-    gap: 0px 30px;
-    img {
-        width: 100%;
-        line-height: 0px;
-    }
-}
 

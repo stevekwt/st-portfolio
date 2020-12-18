@@ -16,6 +16,7 @@
     padding: 20px 0;
     max-width: 630px;
     width: 60vw;
+    min-width: 580px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -39,10 +40,11 @@ article {
     text-align: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 850px) {
     .skills-box {   
-        max-width: 500px;
-        width: 80vw;
+        max-width: 400px;
+        width: 58vw;
+        min-width: 290px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }

@@ -3,8 +3,8 @@
 }
 
 .contact-contents {
-    height: calc(100vh - 50px);
-    min-height: 500px;
+    min-height: calc(100vh - 50px);
+    // min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,10 +13,12 @@
 .contact-box {
     // border: 1px solid #000;
     padding: 20px 0;
-    width: 770px;
+    max-width: 770px;
+    width: 70vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 370px 370px;
+    // grid-template-columns: 370px 370px;
+    grid-template-columns: 1fr 1fr;
     gap: 0px 30px;
 }
 
@@ -74,4 +76,11 @@ form {
     width: calc(50% - 74px);
     display: flex;
     // border: 1px solid red;
+}
+
+@media (max-width: 800px) {
+    .contact-box {
+        width: 60vw;
+        grid-template-columns: 1fr;
+    }
 }

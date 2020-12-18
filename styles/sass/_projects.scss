@@ -20,7 +20,7 @@
     .project-image, .project-article {
         width: calc(50% - 15px);
         padding: 30px 0;
-        border: 1px solid #000;
+        // border: 1px solid #000;
     }
 }
 
@@ -52,16 +52,6 @@
         }
     }
 }
-
-// @media (max-width: 1170px) {
-//     .projects-box {
-//     width: 63vw;
-// }
-//     // .project .project-image, 
-//     // .project .project-article {
-//     //     width: calc(40% - 15px);
-//     // }
-// }
 
 @media (max-width: 940px) {
     .project:nth-of-type(1),
