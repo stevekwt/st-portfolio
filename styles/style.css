@@ -446,7 +446,7 @@ nav ul li a.current {
 }
 
 #menuToggle a:hover {
-  color: yellow;
+  color: #024fff;
 }
 
 #menuToggle input {
