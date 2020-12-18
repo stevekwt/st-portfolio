@@ -1,8 +1,6 @@
 const skwtApp = {};
 
 skwtApp.scrollToSections = () => {
-    console.log(`inside first scroll fn`);
-
     $introLink = $('nav ul li:nth-of-type(1) a')
     $introSection = $('#intro')
     $aboutLink = $('nav ul li:nth-of-type(2) a')
@@ -23,7 +21,6 @@ skwtApp.scrollToSections = () => {
         }, 200);
     });
     $($aboutLink).on('click', function (e) {
-        console.log(`about clicked`);
         $('html, body').animate({
             scrollTop: $($aboutSection).offset().top
         }, 200);
@@ -61,9 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let mainNavLinks = document.querySelectorAll("nav ul li a");
     let mainSections = document.querySelectorAll("main section");
     
-    // ADVICE FROM CODEPEN:
-    // let lastId;
-    // let cur = [];
+    // ADVICE FROM CODEPEN, for future update:
     // This should probably be throttled.
     // Especially because it triggers during smooth scrolling.
     // https://lodash.com/docs/4.17.10#throttle
@@ -76,10 +71,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // NAVBAR SENSE-AREA-HIGHLIGHT
     window.addEventListener("scroll", event => {
       let fromTop = window.scrollY;
-        // console.log({fromTop});
       mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        // console.log(section.offsetTop);
         if (
           section.offsetTop <= (fromTop + 100) &&
           section.offsetTop + section.offsetHeight > (fromTop + 100)

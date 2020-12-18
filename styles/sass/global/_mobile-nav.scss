@@ -1,5 +1,5 @@
 /*
- * adapted from Erik Terwan
+ * adapted from Erik Terwan, credit in index.html
  */
 
 .mobile-menu {
@@ -105,13 +105,6 @@
 #menuToggle input:checked ~ ul {
   transform: none;
 }
-
-// @media (max-width: $thirdMediaQuery) {
-//     .mobile-menu {
-//         visibility: visible;
-//     }
-// }
-
 
 @media (max-width: 776px) {
   .mobile-menu {

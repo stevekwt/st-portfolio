@@ -28,8 +28,6 @@
 .side-nav-mobile {
     z-index: 10;
     position: fixed;
-    // right: -875px;
-    // transform: translateX(-10%);
     border-top: 1.5px solid $blue;
     width: 1000px;
     height: 1px;
@@ -92,8 +90,4 @@ nav ul li a.current {
   .side-nav {
       display:none;
   }
-  // .side-nav-mobile {
-  //   display: initial;
-  //   width: 33px;
-  // }
 }
