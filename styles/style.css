@@ -280,6 +280,7 @@ p {
 a,
 a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .side-nav {
@@ -813,20 +814,6 @@ h1 {
   color: #024fff;
 }
 
-.socials {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-size: 4rem;
-}
-
-.socials a {
-  padding: 10px 10px 0 0;
-  text-decoration: none;
-  color: #959595;
-}
-
 .about-me-right p {
   color: #959595;
   font-size: 1.4rem;
@@ -976,6 +963,18 @@ article {
   padding: 30px 0;
 }
 
+.project .project-links {
+  text-align: center;
+}
+
+.project .project-links a {
+  color: #024fff;
+}
+
+.project .project-links a:hover {
+  color: black;
+}
+
 .made-with ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1117,6 +1116,20 @@ form button {
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 4rem;
+}
+
+.socials a {
+  padding: 10px 10px 0 0;
+  text-decoration: none;
+  color: #024fff;
 }
 
 .backtop {

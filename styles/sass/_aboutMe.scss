@@ -48,18 +48,6 @@
     color: $blue;
 
 }
-.socials {
-    // width: 150px;
-    display: grid;
-    // grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 4rem;
-    a {
-        padding: 10px 10px 0 0;
-        text-decoration: none;
-        color: $darkgray;
-    }
-}
 
 .about-me-right {
     p {
