@@ -857,6 +857,22 @@ h1 {
   background-color: #ebebeb;
 }
 
+.skills article {
+  text-align: center;
+  padding: 20px 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.skills article p {
+  margin-bottom: 0;
+}
+
+.skills article img {
+  width: 100%;
+}
+
 .skills-contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,9 +881,8 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .skills-box {
@@ -885,23 +900,26 @@ h1 {
   gap: 30px 30px;
 }
 
-.skills-box article {
-  padding: 20px 20px 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
+.skills-box-extras {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 630px;
+  width: 60vw;
 }
 
-.skills-box article p {
-  margin-bottom: 0;
+.skills-box-extras article {
+  width: calc(100% / 3);
 }
 
-.skills-box article img {
-  width: 100%;
-}
-
-article {
-  text-align: center;
+.skills-box-extras img {
+  max-width: 95px;
 }
 
 @media (max-width: 850px) {
@@ -917,6 +935,10 @@ article {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 2vw;
   }
+  .skills-box-extras {
+    max-width: 447px;
+    width: 90vw;
+  }
 }
 
 @media (max-width: 850px) {
@@ -928,6 +950,10 @@ article {
 @media (max-width: 400px) {
   .skills-box article {
     padding: 20px 9px 0;
+    width: 81%;
+  }
+  .skills-box-extras article {
+    padding: 20px 9px;
     width: 81%;
   }
 }
