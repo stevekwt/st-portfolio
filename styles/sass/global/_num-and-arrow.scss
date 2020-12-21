@@ -11,8 +11,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: black;
-    line-height: 6rem;
-    // line-height: 8rem; -- optional for less overlap
+    // line-height: 6rem; -- better for FireFox
+    line-height: 7rem;
 }
 .down-arrow, .backtop {
     font-size: 3rem;
