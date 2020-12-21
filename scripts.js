@@ -1,5 +1,12 @@
 const skwtApp = {};
 
+skwtApp.allLinksToNewPage = () => {
+    $(document.links).filter(() => { 
+        return this.hostname != window.location.hostname; 
+    }).attr('target', '_blank')
+}
+// && this.hostname != /#([a-z])*/ig
+
 skwtApp.scrollToSections = () => {
     $introLink = $('nav ul li:nth-of-type(1) a')
     $introSection = $('#intro')
@@ -62,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function() {
     skwtApp.scrollToSections();
 
     skwtApp.pushMobileNavBackIn();
+
+    skwtApp.allLinksToNewPage();
 
     let mainNavLinks = document.querySelectorAll("nav ul li a");
     let mainSections = document.querySelectorAll("main section");
