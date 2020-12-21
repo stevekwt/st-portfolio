@@ -2,10 +2,9 @@ const skwtApp = {};
 
 skwtApp.allLinksToNewPage = () => {
     $(document.links).filter(() => { 
-        return this.hostname != window.location.hostname; 
+        return this.hostname != window.location.hostname && this != /#([a-z])*/ig; 
     }).attr('target', '_blank')
 }
-// && this.hostname != /#([a-z])*/ig
 
 skwtApp.scrollToSections = () => {
     $introLink = $('nav ul li:nth-of-type(1) a')
