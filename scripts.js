@@ -1,9 +1,25 @@
 const skwtApp = {};
 
 skwtApp.allLinksToNewPage = () => {
-    $(document.links).filter(() => { 
-        return this.hostname != window.location.hostname && this != /#([a-z])*/ig; 
-    }).attr('target', '_blank')
+
+    // adapted from https://html.com/attributes/a-target/
+    function externalLinks() { 
+        for(var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) { 
+                var b = c[a]; 
+                if (/#([a-z])*/ig.test(b.getAttribute("href")) === false) {
+                    console.log(b.getAttribute("href"));
+                    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") 
+                } else {
+                    console.log(`${b.getAttribute("href")} (which is a # link)`);
+                }
+            } 
+    }; 
+    externalLinks();
+
+    // a jQuery version which works but doesn't allow me to make exceptions for internal/id-based links:
+    // $(document.links).filter(() => { 
+    //     return this.hostname != window.location.hostname; 
+    // }).attr('target', '_blank')
 }
 
 skwtApp.scrollToSections = () => {
