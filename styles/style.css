@@ -1006,7 +1006,6 @@ article {
 
 .made-with ul li:first-of-type {
   padding-left: 0;
-  margin-left: -5px;
 }
 
 @media (max-width: 940px) {
