@@ -7,10 +7,10 @@ skwtApp.allLinksToNewPage = () => {
         for(var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) { 
                 var b = c[a]; 
                 if (/#([a-z])*/ig.test(b.getAttribute("href")) === false) {
-                    console.log(b.getAttribute("href"));
+                    // console.log(b.getAttribute("href"));
                     b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") 
                 } else {
-                    console.log(`${b.getAttribute("href")} (which is a # link)`);
+                    // console.log(`${b.getAttribute("href")} (which is a # link)`);
                 }
             } 
     }; 
