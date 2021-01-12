@@ -277,10 +277,20 @@ p {
   padding: 3px 9px 3px 3px;
 }
 
-a,
-a:visited {
-  color: black;
+a {
+  color: #024fff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #024fff;
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+a:visited {
+  color: purple;
 }
 
 .side-nav {
@@ -815,7 +825,7 @@ h1 {
 }
 
 .about-me-right p {
-  color: #959595;
+  color: #6f6f6f;
   font-size: 1.4rem;
   line-height: 21px;
   font-family: 'Noto Sans', sans-serif;
@@ -993,14 +1003,6 @@ h1 {
   text-align: center;
 }
 
-.project .project-links a {
-  color: #024fff;
-}
-
-.project .project-links a:hover {
-  color: black;
-}
-
 .made-with ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1027,7 +1029,7 @@ h1 {
 .made-with ul li p {
   text-transform: uppercase;
   font-size: 1.1rem;
-  color: #959595;
+  color: #6f6f6f;
 }
 
 .made-with ul li:first-of-type {
@@ -1106,7 +1108,7 @@ form input {
   background-color: #ebebeb;
   border: none;
   width: 100%;
-  border-bottom: 1px solid #959595;
+  border-bottom: 1px solid #6f6f6f;
   margin: 0 0 20px 0;
 }
 
@@ -1119,7 +1121,7 @@ form label.name-input {
 }
 
 form .email-input {
-  color: #959595;
+  color: #6f6f6f;
 }
 
 form label.email-input {
@@ -1131,8 +1133,8 @@ form textarea {
   width: 100%;
   height: 200px;
   border: none;
-  border-left: 1px solid #959595;
-  border-bottom: 1px solid #959595;
+  border-left: 1px solid #6f6f6f;
+  border-bottom: 1px solid #6f6f6f;
   resize: none;
   padding: 7px;
 }
