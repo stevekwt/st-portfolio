@@ -3,7 +3,7 @@
     background-color: $background;
     article {
         text-align: center;
-        padding: 20px 20px 0;
+        padding: 20px 0 0 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 1.4rem;
@@ -23,15 +23,24 @@
 }
 
 .skills-box {   
-    margin: 20px auto;
+    margin: 20px auto 0;
     padding: 20px 0;
     max-width: 630px;
     width: 60vw;
     min-width: 580px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px 30px;
+    align-items:center;
+    article {
+        img {
+            width: 50px;
+        }
+        p {
+            height: 30px;
+        }
+    };
 }
 .skills-box-extras {
     margin: 0 auto;
@@ -43,10 +52,13 @@
     width: 60vw;
     article {
         width: calc(100% / 3);
+        img {
+            width: 50px;
+        }
+        p {
+            height: 30px;
+        }
     };
-    img {
-        max-width: 95px;
-    }
 }
 
 @media (max-width: 850px) {
