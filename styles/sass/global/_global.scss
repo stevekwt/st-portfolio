@@ -46,8 +46,9 @@ a {
     font-weight: bold;
 }
 a:hover {
-    color: $blue;
-    text-decoration: underline wavy;
+    // color: $blue;
+    // text-decoration: underline wavy;
+    background-color: $yellow;
 }
 a:visited {
     color: purple;

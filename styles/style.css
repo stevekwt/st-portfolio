@@ -284,9 +284,7 @@ a {
 }
 
 a:hover {
-  color: #024fff;
-  -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
+  background-color: yellow;
 }
 
 a:visited {
@@ -566,11 +564,6 @@ nav ul li a.current {
 
 .down-arrow a, .backtop a {
   text-decoration: none;
-}
-
-.down-arrow a:hover,
-.backtop a:hover {
-  color: yellow;
 }
 
 header {
@@ -1161,17 +1154,24 @@ form button {
 }
 
 .socials {
+  font-size: 4rem;
+}
+
+.socials ul {
+  list-style: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-size: 4rem;
 }
 
 .socials a {
-  padding: 10px 10px 0 0;
   text-decoration: none;
   color: #024fff;
+}
+
+.socials a:hover {
+  background-color: #ebebeb;
 }
 
 .backtop {

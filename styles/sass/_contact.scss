@@ -66,13 +66,20 @@ form {
 }
 
 .socials {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 4rem;
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     a {
-        padding: 10px 10px 0 0;
+        // padding: 10px 10px 0 0;
+        // margin: 10px 10px 0 0;
         text-decoration: none;
         color: $blue;
+    }
+    a:hover {
+        background-color: $background;
     }
 }
 
