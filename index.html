@@ -6,6 +6,8 @@
     <title>STEPHEN THOMAS</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans@1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- my styles -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -69,7 +71,7 @@
                     </nav>
 
     
-                    <div class="h1-wrapper">
+                    <div class="h1-wrapper"  data-aos="flip-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
                         <h1>Hello. I’m
 Stephen Thomas,
 Front-End
@@ -110,12 +112,12 @@ Web Developer.</h1>
                     
                 <!-- </div> -->
             
-                <div class="about-me-left">
+                <div class="about-me-left" data-aos="fade-right">
                     <img src="./assets/ST.jpeg" alt="headshot of Stephen Thomas">
                     <a href="./assets/Stephen Thomas - CV.pdf" target="_blank">Résumé in PDF</a>
                 </div>
             
-                <div class="about-me-right">
+                <div class="about-me-right" data-aos="fade-left">
                     <h2>Hello World!</h2>
 
                     <p>I’m a front-end coding convert based out of Toronto. I made websites as art as a kid (available upon request, lol), learned C and R in university, but eventually spent a bunch of years as a writer + teacher + filmmaker. (That portfolio is <a href="https://stephenthomaswriter.com/">here</a>).</p>
@@ -150,8 +152,9 @@ Web Developer.</h1>
                 <p class="tag">Skills</p>
             </div>
 
-            <div class="skills-box">
+            <!-- <h3>Tech Skills</h3> -->
 
+            <div class="skills-box" data-aos="zoom-in">
                 <article>
                     <img src="./assets/icons/html-128.png" alt="HTML icon">
                     <p>HTML5</p>
@@ -214,7 +217,9 @@ Web Developer.</h1>
                 </article>
             </div>
 
-            <div class="skills-box-extras">
+            <!-- <h3>Additional Skills</h3> -->
+
+            <div class="skills-box-extras" data-aos="zoom-in">
                 <article>
                     <img src="./assets/icons/project-mgmt-128.png" alt="Github icon">
                     <p>Project Management</p>
@@ -255,7 +260,7 @@ Web Developer.</h1>
 
                 <!-- PROJECT ONE -->
 
-                <div class="project">
+                <div class="project" data-aos="fade-up">
                     
                     <div class="project-image">
                         <img src="./assets/mb-covid-store.png" alt="a project of mine called 'The COVID Store' displayed on a MacBook">
@@ -297,7 +302,7 @@ Web Developer.</h1>
 
                 <!-- PROJECT TWO -->
 
-                <div class="project">
+                <div class="project" data-aos="fade-up">
                 
                     <div class="project-article">
                         <h2>Detective Pokemon</h2>
@@ -332,7 +337,7 @@ Web Developer.</h1>
 
                 <!-- PROJECT THREE -->
 
-                <div class="project">
+                <div class="project" data-aos="fade-up">
                 
                     <div class="project-image">
                         <img src="./assets/mb-essay-idea-db.png" alt="a project of mine called 'Essay Idea DB' displayed on a MacBook">
@@ -368,7 +373,7 @@ Web Developer.</h1>
 
                 <!-- PROJECT FOUR -->
 
-                <div class="project">
+                <div class="project" data-aos="fade-up">
                 
                     <div class="project-article">
                         <h2>Hoot The Flower</h2>
@@ -402,7 +407,7 @@ Web Developer.</h1>
 
                 <!-- PROJECT FIVE -->
 
-                <div class="project">
+                <div class="project" data-aos="fade-up">
                 
                     <div class="project-image">
                         <img src="./assets/mb-hellofriends.png" alt="a project of mine called 'CB F*ing T' displayed on a MacBook">
@@ -437,7 +442,7 @@ Web Developer.</h1>
                 
                 <!-- PROJECT SIX -->
 
-                <div class="project">
+                <div class="project" data-aos="fade-up">
                 
                     <div class="project-article">
                         <h2>Bikerland</h2>
@@ -494,7 +499,7 @@ Web Developer.</h1>
 
             <div class="contact-box">
 
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true" data-aos="fade-right">
                     <label for="name" class="name-input">Name</label>
                     <input type="text" id="name" class="name-input" name="name">
                     <label for="email" class="email-input">Email</label>
@@ -504,7 +509,7 @@ Web Developer.</h1>
                     <button>Send Message</button>
                 </form>
 
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left">
                     <h2>Get in touch!</h2>
 
                     <p>I’d love to talk. Think I might be well-suited to a position? Wanna chat about ‘rococo’s basilisk’? It’s all good.</p>
@@ -546,8 +551,17 @@ Web Developer.</h1>
 
 <script src='https://code.jquery.com/jquery-3.4.0.min.js'
     integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
-<script src="./scripts.js"></script>
-<script src="https://kit.fontawesome.com/748771d4d7.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/748771d4d7.js" crossorigin="anonymous"></script>
+
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- my own scripts -->
+    <script src="./scripts.js"></script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
