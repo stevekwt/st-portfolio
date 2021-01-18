@@ -1,7 +1,6 @@
 const skwtApp = {};
 
 skwtApp.allLinksToNewPage = () => {
-
     // adapted from https://html.com/attributes/a-target/
     function externalLinks() { 
         for(var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) { 
@@ -15,11 +14,6 @@ skwtApp.allLinksToNewPage = () => {
             } 
     }; 
     externalLinks();
-
-    // a jQuery version which works but doesn't allow me to make exceptions for internal/id-based links:
-    // $(document.links).filter(() => { 
-    //     return this.hostname != window.location.hostname; 
-    // }).attr('target', '_blank')
 }
 
 skwtApp.scrollToSections = () => {
@@ -70,24 +64,31 @@ skwtApp.scrollToSections = () => {
     
 }
 
-// after mobile nav is clicked, it automatically hides
-skwtApp.pushMobileNavBackIn = () => {
-    $('#menuToggle a').on('click', function () {
-        $('#menuToggle input').prop('checked', false); 
-    });
-}
+// after mobile nav is clicked, it automatically hides (OLD VERSION)
+// skwtApp.pushMobileNavBackIn = () => {
+//     $('#menuToggle a').on('click', function () {
+//         $('#menuToggle input').prop('checked', false); 
+//     });
+// }
 
+// after mobile nav is clicked, it automatically hides (NEW VERSION)
+// skwtApp.pushMobileNavBackIn = () => {
+//     $('.mobile-nav a').on('click', function () {
+//         $('.open').removeClass('oppenned');
+//         console.log(`mobile link clicked`);
+//     });
+// }
 
 
 document.addEventListener("DOMContentLoaded", function() {
 
     skwtApp.scrollToSections();
 
-    skwtApp.pushMobileNavBackIn();
+    // skwtApp.pushMobileNavBackIn();
 
     skwtApp.allLinksToNewPage();
 
-    let mainNavLinks = document.querySelectorAll("nav ul li a");
+    let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
     let mainSections = document.querySelectorAll("main section");
     
     // ADVICE FROM CODEPEN, for future update (credit in index.html):

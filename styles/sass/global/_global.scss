@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .inner-wrapper {
     max-width: 1170px;
     margin: 0 auto;
@@ -45,7 +49,12 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
-a:hover {
+.side-nav a:hover,
+.num-and-arrow a:hover,
+.about-me a:hover,
+.skills a:hover,
+.projects a:hover,
+.contact-me a:hover {
     // color: $blue;
     // text-decoration: underline wavy;
     background-color: $yellow;

@@ -14,9 +14,11 @@
     position: absolute;
     position: fixed;
     top: 50px;
-    right: 50px;
+    // right: 50px;
+    right: 100px;
     z-index: 1;
     user-select: none;
+
 }
 
 #menuToggle a

@@ -2,7 +2,10 @@
 @import './global/colors';
 @import './global/global';
 @import './global/nav';
-@import './global/mobile-nav';
+
+@import './global/mobile-nav'; // old one
+@import './global/mobilenav';
+
 @import './global/num-and-arrow';
 @import 'header';
 @import 'aboutMe';
