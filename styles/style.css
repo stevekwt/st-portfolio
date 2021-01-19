@@ -254,21 +254,11 @@ main {
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 30px;
-}
-
-p {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.4rem;
-}
-
-.tag {
   background-color: #024fff;
   color: white;
   display: inline-block;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.4rem;
 }
 
 .tag-template {
@@ -277,8 +267,29 @@ p {
   padding: 40px 0 20px;
 }
 
-.tag-template p {
+.tag-template h2 {
   padding: 3px 9px 3px 3px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 30px;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.4rem;
 }
 
 a {
@@ -1148,6 +1159,10 @@ h1 {
 }
 
 .about-me-box h2 {
+  margin-top: 0;
+}
+
+.about-me-box h3 {
   margin-top: 175px;
 }
 
@@ -1162,7 +1177,7 @@ h1 {
   text-align: right;
 }
 
-.about-me-tag-1 p {
+.about-me-tag-1 h2 {
   padding: 3px 9px 3px 3px;
   margin: 0;
 }
