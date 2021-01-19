@@ -71,6 +71,10 @@ form {
         list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 0;
+        li {
+            justify-self: center;
+        }
     }
     a {
         // padding: 10px 10px 0 0;
