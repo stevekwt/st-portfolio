@@ -1238,7 +1238,7 @@ h1 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .about-me-box h2 {
+  .about-me-box h3 {
     margin-top: 28px;
   }
 }
