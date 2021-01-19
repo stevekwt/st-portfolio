@@ -311,6 +311,10 @@ a:visited {
   color: purple;
 }
 
+.book {
+  font-style: italic;
+}
+
 .side-nav {
   top: 40vh;
   left: 50%;
@@ -1431,7 +1435,8 @@ h1 {
 @media (max-width: 940px) {
   .project:nth-of-type(1),
   .project:nth-of-type(3),
-  .project:nth-of-type(5) {
+  .project:nth-of-type(5),
+  .project:nth-of-type(7) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1439,7 +1444,8 @@ h1 {
   }
   .project:nth-of-type(2),
   .project:nth-of-type(4),
-  .project:nth-of-type(6) {
+  .project:nth-of-type(6),
+  .project:nth-of-type(8) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
