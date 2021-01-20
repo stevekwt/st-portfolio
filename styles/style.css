@@ -1346,6 +1346,10 @@ h1 {
   text-align: center;
 }
 
+.project:last-of-type .project-article {
+  padding-top: 0;
+}
+
 .made-with ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1383,7 +1387,8 @@ h1 {
   .project:nth-of-type(1),
   .project:nth-of-type(3),
   .project:nth-of-type(5),
-  .project:nth-of-type(7) {
+  .project:nth-of-type(7),
+  .project:nth-of-type(9) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
