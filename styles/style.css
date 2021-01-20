@@ -1312,6 +1312,15 @@ h1 {
   height: 30px;
 }
 
+.currently-working-on {
+  text-align: center;
+}
+
+.currently-working-on ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .skills-box-extras {
   margin: 0 auto;
   display: -webkit-box;
