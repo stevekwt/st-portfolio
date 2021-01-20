@@ -1242,11 +1242,27 @@ h1 {
 
 .currently-working-on {
   text-align: center;
+  width: 50vw;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .currently-working-on ul {
   list-style: none;
   padding-left: 0;
+}
+
+.currently-working-on ul li {
+  display: inline;
+}
+
+.currently-working-on ul li p::before {
+  content: '☞ ';
+  font-size: 1.7rem;
+  display: inline-block;
+  -webkit-transform: translate(-8px, 1px);
+          transform: translate(-8px, 1px);
 }
 
 .skills-box-extras {
