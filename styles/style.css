@@ -304,7 +304,7 @@ a {
 .skills a:hover,
 .projects a:hover,
 .contact-me a:hover {
-  background-color: yellow;
+  background-color: #ffff00;
 }
 
 a:visited {
@@ -383,7 +383,7 @@ a:visited {
 
 .side-nav ul li a:hover,
 .side-nav-mobile ul li a:hover {
-  background-color: yellow;
+  background-color: #ffff00;
   color: black;
 }
 
@@ -980,7 +980,7 @@ header {
 }
 
 .language-select .lang {
-  background-color: yellow;
+  background-color: #ffff00;
   color: black;
   padding: 10px;
 }
