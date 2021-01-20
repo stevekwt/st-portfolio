@@ -10,7 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans@1&display=swap" rel="stylesheet">
 
+    <!-- animate on scroll  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- textillate dependencies #1 -->
+    <link rel="stylesheet" href="./scripts/textillate-master/assets/animate.css">
+
     <!-- my styles -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -120,10 +125,10 @@
 
                 <div class="h1-wrapper">
                 <!-- <div class="h1-wrapper"  data-aos="flip-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic"> -->
-                    <h1>Hello. I’m
-Stephen Thomas,
-Front-End
-Web Developer.</h1>
+                    <h1><span class="tlt1" data-in-effect="fadeInLeftBig">Hello. </span><span class="tlt2" data-in-effect="fadeInLeftBig">I’m</span>
+<span class="tlt2" data-in-effect="fadeInLeftBig">Stephen Thomas,</span>
+<span class="tlt3" data-in-effect="fadeInLeftBig">Front-End</span>
+<span class="tlt4" data-in-effect="fadeInLeftBig">Web Developer.</span></h1>
                 </div>
 
                 <div class="num-and-arrow">
@@ -682,6 +687,9 @@ Web Developer.</h1>
     AOS.init();
 </script>
 
+<!-- textillate dependencies #2 -->
+<script src="./scripts/textillate-master/jquery.textillate.js"></script>
+<script src="./scripts/textillate-master/assets/jquery.lettering.js"></script>
 
 
 <!-- my own scripts -->
@@ -691,6 +699,7 @@ Web Developer.</h1>
 
 <!-- particles -->
 <script src="./scripts/particles.js"></script>
+
 
 <script>
     particlesJS.load('particles-js', 'scripts/particles.json', function () {

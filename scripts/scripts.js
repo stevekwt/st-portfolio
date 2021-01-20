@@ -1,5 +1,18 @@
 const skwtApp = {};
 
+skwtApp.textillate = () => {
+    $('.tlt1').textillate();
+    $('.tlt2').textillate({
+        initialDelay: 800,
+    });
+     $('.tlt3').textillate({
+        initialDelay: 1100,
+    });
+     $('.tlt4').textillate({
+        initialDelay: 1400,
+    });
+}
+
 skwtApp.allLinksToNewPage = () => {
     // adapted from https://html.com/attributes/a-target/
     function externalLinks() { 
@@ -87,6 +100,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // skwtApp.pushMobileNavBackIn();
 
     skwtApp.allLinksToNewPage();
+
+    skwtApp.textillate();
 
     let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
     let mainSections = document.querySelectorAll("main section");
