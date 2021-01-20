@@ -1,7 +1,7 @@
 const skwtApp = {};
 
 skwtApp.textillate = () => {
-    $('.tlt1').textillate();
+    $('.tlt1').textillate({});
     $('.tlt2').textillate({
         initialDelay: 800,
     });
@@ -10,6 +10,56 @@ skwtApp.textillate = () => {
     });
      $('.tlt4').textillate({
         initialDelay: 1400,
+    });
+
+    // $('.tlt-test').textillate({
+    //     initialDelay: 500,
+    //     in: {
+    //         effect: 'fadeInDown',
+    //         sync: true,
+    //         callback: function() {
+    //             setTimeout(function(){ 
+    //                 $('.tlt-test').textillate('out');
+    //             }, 500);
+    //         }
+    //     },
+    //     out: {
+    //         effect: 'hinge',
+    //         shuffle: true,
+    //     }
+    // });
+
+    $('.psst1').textillate({
+        initialDelay: 4500,
+        in: {
+            effect: 'fadeInDown',
+            sync: true,
+            callback: function() {
+                setTimeout(function(){ 
+                    $('.psst1').textillate('out');
+                }, 5000);
+            }
+        },
+        out: {
+            effect: 'hinge',
+            shuffle: true,
+        },
+    });
+    $('.psst2').textillate({
+        initialDelay: 5300,
+        in: {
+            effect: 'fadeInDown',
+            sync: true,
+            callback: function() {
+                setTimeout(function(){ 
+                    $('.psst2').textillate('out');
+                }, 4200);
+            }
+        },
+        out: {
+            effect: 'hinge',
+            shuffle: true,
+        },
     });
 }
 

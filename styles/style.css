@@ -970,6 +970,16 @@ header {
           justify-content: space-between;
 }
 
+.psst-box {
+  position: absolute;
+  visibility: hidden;
+  left: 3vw;
+  color: black;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+
 .header-contents .down-arrow {
   -webkit-animation: bounceFirst 3s ease-in-out 5s 1, bounce 2.5s ease-in-out 8s infinite;
           animation: bounceFirst 3s ease-in-out 5s 1, bounce 2.5s ease-in-out 8s infinite;

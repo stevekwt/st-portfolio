@@ -19,6 +19,20 @@ header {
     justify-content: space-between;
 }
 
+.psst-box {
+  position: absolute;
+  visibility: hidden;
+  // left: -10vw;
+  left: 3vw;
+  // width: 360px;
+  color: $black;
+  // background-color: $black;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  // text-shadow: 1px 1px 0px $black, -1px -1px 1px $black, 1px 1px 1px $black;
+}
+
 // .language-select {
 //     font-size: 1.1rem;
 //     font-family: 'Montserrat', sans-serif;
