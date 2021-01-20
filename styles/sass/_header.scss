@@ -19,66 +19,70 @@ header {
     justify-content: space-between;
 }
 
-.language-select {
-    font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 150px;
-    text-align: center;
-    .lang {
-        background-color: $yellow;
-        color: black;
-        padding: 10px;
-    }
-    .lang-line {
-        width: 30px;
-        height: 3px;
-        border-top: 2px solid black;
-        display: inline-block;
-        animation: 
-            spinLine 200ms linear 1.5s 1 forwards, 
-            fallDown 1.5s cubic-bezier(0.760, 0.150, 0.940, 0.680) 1.7s 1 forwards,
-            shrink 1ms linear 3.2s 1 forwards;
-    }
-}
+// .language-select {
+//     font-size: 1.1rem;
+//     font-family: 'Montserrat', sans-serif;
+//     margin: 0 auto;
+//     padding: 10px 0;
+//     width: 150px;
+//     text-align: center;
+//     .lang {
+//         background-color: $yellow;
+//         color: black;
+//         padding: 10px;
+//     }
+//     .lang-line {
+//         width: 30px;
+//         height: 3px;
+//         border-top: 2px solid black;
+//         display: inline-block;
+//         animation: 
+//             spinLine 200ms linear 1.5s 1 forwards, 
+//             fallDown 1.5s cubic-bezier(0.760, 0.150, 0.940, 0.680) 1.7s 1 forwards,
+//             shrink 1ms linear 3.2s 1 forwards;
+//     }
+// }
 
-@keyframes spinLine {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(450deg);
-  }
-}
-@keyframes fallDown {
-  0% {
-    transform: translateY(0) rotateZ(90deg);
-  }
-  100% {
-    transform: translateY(90vh) rotateZ(90deg);
-  }
-}
-@keyframes shrink {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
+// @keyframes spinLine {
+//   0% {
+//     transform: rotateZ(0);
+//   }
+//   100% {
+//     transform: rotateZ(450deg);
+//   }
+// }
+// @keyframes fallDown {
+//   0% {
+//     transform: translateY(0) rotateZ(90deg);
+//   }
+//   100% {
+//     transform: translateY(90vh) rotateZ(90deg);
+//   }
+// }
+// @keyframes shrink {
+//   0% {
+//     transform: scale(1);
+//   }
+//   100% {
+//     transform: scale(0);
+//   }
+// }
 
 .header-contents .down-arrow {
     animation: 
-        bounceFirst 1.5s ease-in-out 3.2s 1,
-        bounce 2.5s ease-in-out 4.7s infinite;
+        bounceFirst 3s ease-in-out 5s 1,
+        bounce 2.5s ease-in-out 8s infinite;
 }
 @keyframes bounceFirst {
   0% {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(30px);
+  25% {
+    // transform: translateY(-150px);
+    transform: translateY(-30vh);
+  }
+  80% {
+    transform: translateY(40px);
   }
   100% {
     transform: translateY(0px);
